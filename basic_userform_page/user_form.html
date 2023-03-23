@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="user_form.css">
+        <script>
+            function fun1()
+            {
+                let fname=prompt("\nEnter your first name:");
+                alert("Your First Name:"+fname);
+            }
+            function fun2()
+            {
+                let lname=prompt("\nEnter your last name:");
+                alert("\nYour last name:"+lname);
+            }
+            function fun3()
+            {
+                let fname=prompt("\n Enter first name:");
+                let lname=prompt("\nEnter last name:");
+                alert("\nYour Full name is: "+fname+" "+lname);
+                var pattern=/^[a-zA-Z]*$/;
+                if (pattern.test(fname)){
+                  
+                }
+                else{
+                    alert("Should not use special characters and numbers");
+                }
+                var pattern=/^[a-zA-Z]*$/;
+                if (pattern.test(lname)){
+                  
+                }
+                else{
+                    alert("Should not use special characters and numbers");
+                }
+            }
+            function fun4()
+            {
+                let fname=prompt("Enter first name:");
+                let lname=prompt("Enter last name:");
+                alert("\nLength of the first name:"+fname.length);
+                alert("\nLength of the last name:"+lname.length);
+            }
+            function fun5()
+            {
+                let fname=prompt("Enter first name:");
+                let lname=prompt("Enter last name:");
+                alert("\nHello "+fname+" "+lname);
+            }
+            function fun6()
+            {
+                let fname=prompt("Enter first name:");
+                let lname=prompt("Enter last name:");
+                alert(fname.toUpperCase()+lname.toUpperCase());
+            }
+            function fun7()
+            {
+                let fname=prompt("Enter first name:");
+                let lname=prompt("Enter last name:");
+                alert(fname.split('').reverse().join('')+" "+lname.split('').reverse().join(''));
+            }
+            </script>
+    </head>
+    <body>
+        <div class="form">
+            <form>
+                <h1><b>Hello User..!</b></h1>
+                <h3><b>Play with your name</b></h3>
+                <button onclick="fun1()"><b>First Name</b></button><br><br>
+                <button onclick="fun2()"><b>Last Name</b></button><br><br>
+                <button onclick="fun3()"><b>Full Name</b></button><br><br>
+                <button onclick="fun4()"><b>Length</b></button><br><br>
+                <button onclick="fun5()"><b>Greet</b></button><br><br>
+                <button onclick="fun6()"><b>Capitalize</b></button><br><br>
+                <button onclick="fun7()"><b>Reverse</b></button><br><br>
+            </form>
+        </div>
+    </body>
+    <footer><b>Copyrighted by:&nbsp;&nbsp;Shivsaran.S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22MX223&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;13-11-2022</b></footer>
+</html>
