@@ -1,0 +1,70 @@
+/*1.	Print the length of the given string. */
+string="PSG college of Technology";
+console.log(string.length);
+console.log("\n");
+/*2.	Extract the substring ( from ith character to jth character) from the given string. */
+let i,j;
+i=string.substring(0,6);
+j=string.substring(3,);
+console.log(i);
+console.log(j);
+console.log("\n");
+/*3.	Replace ‘Tech’ in the string ‘PSG Tech’ with ‘College of Technology’ .  */
+string1="PSG College of Technology";
+console.log(string1.replace("Technology","Tech"));
+console.log("\n");
+/*4.	Convert the given string to uppercase/lowercase. */
+console.log(string.toUpperCase());
+console.log(string1.toLowerCase());
+console.log("\n");
+/*Concatenate the strings str1 and str2 and form a new string str3 and print all three strings. 
+            
+Let  str1= “My First Web Project tells” , str2=” is my success”  */
+let str1="My First Web Project tells ";
+let str2="is my success";
+let str3=str1.concat(str2);
+console.log(str1);
+console.log(str2);
+console.log(str3);
+console.log("\n");
+//charAt()
+value="Pugazh";
+console.log(value.charAt(5));
+console.log("\n");
+//concat()
+val1="Hii";
+val2="Everyone";
+console.log(val1.concat(val2));
+console.log("\n");
+//endsWith()
+s="PSG College of Technology";
+console.log(s.includes("Technology"));
+console.log("\n");
+//fromCharCode()
+let myName=String.fromCharCode(80,85,71,65,90,72);
+console.log(myName);
+console.log("\n");
+//includes
+a="PSG College of Technology";
+console.log(a.includes("of"));
+console.log("\n")
+//repeat()
+let r="Master of Computer Applications"
+console.log(r.repeat(5));
+console.log("\n");
+//trim()
+c="        PSG TECH      ";
+console.log(c.trim());
+console.log("\n");
+//slice()
+college="PSG College of Technology";
+console.log(college.slice(3,8));
+console.log("\n");
+//toUpperCase()
+college="PSG College of Technology";
+console.log(college.toUpperCase());
+console.log("\n");
+//toLowerCase()
+college="PSG College of Technology";
+console.log(college.toLowerCase());
+console.log("\n");
