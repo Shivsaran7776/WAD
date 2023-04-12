@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Log In Page</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="innerbody">
+            <label for="uname">Username</label>
+            <input type="text" id="name2" placeholder="enter your name"><br><br>
+            <button onclick="submitbttn()">Submit</button>
+        </div>
+        <script>
+            function submitbttn()
+            {
+                var val=localStorage.getItem("name");
+                var val1=document.getElementById("name2").value;
+                if (val1.match(val))
+                {
+                    alert("Input Correct");
+                }
+                else
+                {
+                    alert("User name invalid");
+                    document.getElementById("")
+                }
+            }
+        </script>
+        <footer>
+            <p>&#169 Shivsaran.S&nbsp;&nbsp;&nbsp;&nbsp;22MX223&nbsp;&nbsp;&nbsp;&nbsp;22-11-2022</p>
+        </footer>
+    </body>
+    
+</html>
