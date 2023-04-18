@@ -1,0 +1,43 @@
+<html>   <head>   </head>   
+<body>   <script>   
+var x= prompt("Enter a number");
+if (Number(x)%2==0)
+    alert("Even");
+
+else
+    alert("Odd");
+
+
+</script>
+<p id="demo"></p>
+<script>
+    function mynum(n)
+    {
+        let c=0,odd_count=0,even_count=0;
+        for(let i=0;i<=n;i++)
+        {
+            if(c<=n)
+        {
+            c=c+1;
+        }
+            if(i%2==0)
+            {
+                console.log(i);
+                odd_count+=1;
+            }
+            else
+            {
+                console.log(i);
+                even_count+=1;
+            }
+        }
+        console.log("\nCount:",c);
+        console.log("\nOdd Count:",odd_count);
+        console.log("\nEven Count:",even_count);
+    }
+    document.getElementById("demo").innerHtml=mynum(20);
+
+</script> 
+ </body>  
+  </html>
+

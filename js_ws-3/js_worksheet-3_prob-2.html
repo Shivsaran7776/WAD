@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+<p id="demo"></p>
+<body>
+<script>
+    function mynum(val)
+    {
+        let odd_count=0,even_count=0,n;
+        n=val.length;
+        for(let i=1;i<=n;i++)
+        {
+            
+            if(val[i]%2==0)
+            {
+                even_count+=1;
+            }
+            else
+            {
+                odd_count+=1;
+            }
+        }
+        
+        alert("\nTotal Count:"+n);
+        alert("Odd Count:"+odd_count);
+        alert("Even Count:"+even_count);
+    }
+    let val=prompt("\nEnter a number:")
+    document.getElementById("demo").innerHtml=mynum(val);
+</script> 
+</body>
+</html>

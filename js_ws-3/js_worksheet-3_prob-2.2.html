@@ -1,0 +1,29 @@
+<!-- ii)	Print the sum of all digits of the given number, print the largest digit in the given number, and print the smallest digit
+ in the given number.  -->
+
+ <html>
+    <head></head>
+    <body>
+        <script>
+            let n,sum=0,l_val,s_val,i,j,l;
+            n=prompt("Enter a number:");
+            l=n.length;
+            for(i=0;i<l;i++)
+            {
+                sum+=Number(n[i]);
+            }
+            document.write("\nSum of the numbers is:",sum);
+
+            let max=min=Number(n[0]);
+            for(i=0;i<l;i++)
+            {
+                if(Number(n[i])>max)
+                    max=Number(n[i]);
+                else 
+                    min=Number(n[i]);
+            }
+            document.write("<br>Maximum digit is:",max);
+            document.write("<br>Minimum digit is:",min);
+        </script>
+    </body>
+ </html>
